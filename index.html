@@ -6,17 +6,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My links</title>
   <link rel="stylesheet" href="./src/css/style.css">
+  <!-- neither of the two options to prevent the load block by the script at the top of my code is working -->
+  <script src="https://unpkg.com/feather-icons"></script>
 </head>
 
 <body>
-    <ul>
+  <ul>
+    <li>
       <a target="_blank" href="https://github.com/oAndin">
-        <li>Github</li>
+        <i data-feather="github"></i>
+        <span>
+          <h1>GitHub</h1>
+        </span>
+        <img src="./src/img/frame-_3_.svg" alt="git hub profile qr code">
       </a>
+    </li>
+    <li>
       <a target="_blank" href="https://www.linkedin.com/in/andherson-costa/">
-        <li>Linkedin</li>
+        <i data-feather="linkedin"></i>
+        <span>
+          <h1>LinkedIn</h1>
+        </span>
+        <img src="./src/img/frame-_4_.svg" alt="linked-in profile qr code">
       </a>
-    </ul>
+    </li>
+  </ul>
+  <script>
+    feather.replace();
+  </script>
+
 </body>
 
 </html>
