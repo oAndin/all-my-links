@@ -1,41 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My links</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <!-- neither of the two options to prevent the load block by the script at the top of my code is working -->
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My links</title>
-  <link rel="stylesheet" href="./src/css/style.css">
-  <!-- neither of the two options to prevent the load block by the script at the top of my code is working -->
-  <script src="https://unpkg.com/feather-icons"></script>
-</head>
-
-<body>
-  <ul>
-    <li>
-      <a target="_blank" href="https://github.com/oAndin">
-        <img src="./src/img/frame-_3_.svg" alt="git hub profile qr code">
-        <i data-feather="github"></i>
-        <span>
-          <p>github.com/oAndin
-          <p>
-        </span>
-      </a>
-    </li>
-    <li>
-      <a target="_blank" href="https://www.linkedin.com/in/andherson-costa/">
-        <img src="./src/img/frame-_4_.svg" alt="linked-in profile qr code">
-        <i data-feather="linkedin"></i>
-        <span>
-          <p>linkedin.com/andherson-costa/</p>
-        </span>
-      </a>
-    </li>
-  </ul>
-  <script>
-    feather.replace();
-  </script>
-
-</body>
-
+  <body>
+    <ul>
+      <li>
+        <a target="_blank" href="https://github.com/oAndin">
+          <img src="./src/img/frame-_3_.svg" alt="git hub profile qr code" />
+          <div class="icon-link">
+            <i data-feather="github"></i>
+            <span>
+              <p>github.com/oAndin</p>
+              <p></p
+            ></span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="https://www.linkedin.com/in/andherson-costa/">
+          <img src="./src/img/frame-_4_.svg" alt="linked-in profile qr code" />
+          <div class="icon-link">
+            <i data-feather="linkedin"></i>
+            <span>
+              <p>linkedin.com/andherson-costa/</p>
+            </span>
+          </div>
+        </a>
+      </li>
+    </ul>
+    <script>
+      feather.replace();
+    </script>
+  </body>
 </html>
