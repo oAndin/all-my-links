@@ -10,9 +10,41 @@ body {
   width: 100%;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #000000;
+}
+
+h1.title {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+div.card {
+  /* border: 1px solid #fff; */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  gap: 0.5rem;
+}
+
+.and{
+  margin: -0.5rem 0 -0.5rem 0;
+}
+
+div.card .picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  background-color: #fff;
 }
 
 ul {
@@ -95,7 +127,6 @@ ul a img {
   }
 }
 @media screen and (min-width: 1440px) {
-
   ul li a {
     flex-direction: row;
   }
