@@ -7,8 +7,6 @@
 }
 
 body {
-  width: 100%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,6 +17,10 @@ body {
 h1.title {
   color: #fff;
   margin-bottom: 1rem;
+}
+
+h3 {
+  text-align: center;
 }
 
 div.card {
@@ -33,7 +35,7 @@ div.card {
   gap: 0.5rem;
 }
 
-.and{
+.and {
   margin: -0.5rem 0 -0.5rem 0;
 }
 
@@ -45,6 +47,14 @@ div.card .picture {
   height: 15rem;
   border-radius: 50%;
   background-color: #fff;
+  z-index: -1;
+}
+
+div.card .picture img {
+  width: 97%;
+  height: 97%;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 ul {
@@ -118,16 +128,19 @@ ul a img {
 }
 
 @media screen and (min-width: 768px) {
-  ul li a {
-    flex-direction: row;
-  }
   ul li {
-    min-width: 90%;
     width: 100%;
   }
+  ul li div {
+    flex-direction: column;
+  }
 }
-@media screen and (min-width: 1440px) {
-  ul li a {
+@media screen and (min-width: 1024px) {
+  body {
+    width: 100%;
+    height: 100vh;
+  }
+  ul {
     flex-direction: row;
   }
   ul li {
